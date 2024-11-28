@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>股票分析助手 - 基于《笑傲牛熊》</title>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
     <style>
         .container {
             max-width: 1200px;
@@ -254,7 +254,7 @@
                     <li>支撑位：20天内最低两个低点的平均值</li>
                     <li>压力位：20天内最高两个高点的平均值</li>
                     <li>突破支撑位：卖出信号增强</li>
-                    <li>突破压力位：买入信���增强</li>
+                    <li>突破压力位：买入信号增强</li>
                 </ul>
             </div>
             
@@ -270,24 +270,18 @@
             
             <div id="market" class="tab-content">
                 <h4>市场特征判断</h4>
-                <p>重要原则：判断多头或空头市场，必须同时满足以下三个特征，缺一不可</p>
                 <ul>
-                    <li>多头市场（必须同时满足）：</li>
+                    <li>多头市场：</li>
                     <ul>
-                        <li>1. 均线系统：MA5 > MA10 > MA20 > MA60（多头排列）</li>
-                        <li>2. 价格位置：价格站稳在MA20均线上方</li>
-                        <li>3. 量价配合：成交量放大30%以上且20天涨幅>8%</li>
+                        <li>MA5 > MA10 > MA20 > MA60（多头排列）</li>
+                        <li>价格站上主要均线</li>
+                        <li>成交量配合上涨</li>
                     </ul>
-                    <li>空头市场（必须同时满足）：</li>
+                    <li>空头市场：</li>
                     <ul>
-                        <li>1. 均线系统：MA5 < MA10 < MA20 < MA60（空头排列）</li>
-                        <li>2. 价格位置：价格持续在MA20均线下方</li>
-                        <li>3. 量价配合：成交量放大30%以上且20天跌幅>8%</li>
-                    </ul>
-                    <li>盘整市场：</li>
-                    <ul>
-                        <li>不满足上述多头或空头市场的完整条件</li>
-                        <li>通常表现为均线交叉、区间震荡</li>
+                        <li>MA5 < MA10 < MA20 < MA60（空头排列）</li>
+                        <li>价格运行在主要均线下方</li>
+                        <li>成交量配合下跌</li>
                     </ul>
                 </ul>
             </div>
